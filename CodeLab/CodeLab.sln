@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codelet", "Codelet\Codelet.csproj", "{1EA5BA9C-FBF9-46A4-BD9B-2450B16013BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeletTests", "CodeletTests\CodeletTests.csproj", "{681B4E56-D845-4B34-8E04-FD383A57CD6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EA5BA9C-FBF9-46A4-BD9B-2450B16013BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA5BA9C-FBF9-46A4-BD9B-2450B16013BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA5BA9C-FBF9-46A4-BD9B-2450B16013BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA5BA9C-FBF9-46A4-BD9B-2450B16013BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681B4E56-D845-4B34-8E04-FD383A57CD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681B4E56-D845-4B34-8E04-FD383A57CD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681B4E56-D845-4B34-8E04-FD383A57CD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681B4E56-D845-4B34-8E04-FD383A57CD6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40B8227C-8C9D-4BE1-9CFE-E9FCD872C899}
+	EndGlobalSection
+EndGlobal
