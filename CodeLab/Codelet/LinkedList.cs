@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Codelet
+﻿namespace Codelet
 {
     /// <summary>
     /// List node
