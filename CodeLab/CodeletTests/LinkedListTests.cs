@@ -12,7 +12,7 @@ namespace Codelet.Tests
         [TestMethod()]
         public void ReverseListTest1()
         {
-            // Construct a linked list  A,B,C,D,E
+            // Construct a linked list H->A->B->C->D->E->null
             ListNode nodeE = new ListNode("E", null);
             ListNode nodeD = new ListNode("D", nodeE);
             ListNode nodeC = new ListNode("C", nodeD);
@@ -21,6 +21,7 @@ namespace Codelet.Tests
 
             LinkedList linkedList = new LinkedList(nodeA);
 
+            // Reverse the linked list and verify the result
             linkedList.ReverseList();
 
             ListNode tempNode = linkedList.Head.Next;
@@ -38,6 +39,7 @@ namespace Codelet.Tests
         /// <summary>
         /// Test case to reverse list of H->null
         /// </summary>
+        [TestMethod()]
         public void ReverseListTest2()
         {
             // Construct a linked list H->null
@@ -45,6 +47,7 @@ namespace Codelet.Tests
 
             LinkedList linkedList = new LinkedList(nodeA);
 
+            //Reverse the linked list and verify the result
             linkedList.ReverseList();
 
             ListNode tempNode = linkedList.Head.Next;
@@ -63,6 +66,7 @@ namespace Codelet.Tests
         /// <summary>
         /// Test case to reverse list of H->A->null
         /// </summary>
+        [TestMethod()]
         public void ReverseListTest3()
         {
             // Construct a linked list H->A->null
@@ -70,6 +74,7 @@ namespace Codelet.Tests
 
             LinkedList linkedList = new LinkedList(nodeA);
 
+            //Reverse the linked list and verify the result
             linkedList.ReverseList();
 
             ListNode tempNode = linkedList.Head.Next;

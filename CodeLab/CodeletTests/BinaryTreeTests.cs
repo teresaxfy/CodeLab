@@ -5,15 +5,12 @@ namespace Codelet.Tests
     [TestClass()]
     public class BinaryTreeTests
     {
+        /// <summary>
+        ///Test case to get height of a tree with 4 levels
+        /// </summary>
         [TestMethod()]
-        public void BinaryTreeTest()
+        public void BinaryTreeTest1()
         {
-            // Construct a tree with only a root node
-            TreeNode root = new TreeNode(null, null, String.Empty);
-            BinaryTree tree1 = new BinaryTree(root);
-
-            Assert.IsTrue(tree1.Height == 1);
-
             // Construct a tree with 4 levels (A,B, C, D, E, null, F, G, H, I, null, null, null, J)
 
             // Depth level 4
@@ -37,6 +34,31 @@ namespace Codelet.Tests
             BinaryTree tree2 = new BinaryTree(leafA);
 
             Assert.IsTrue(tree2.Height == 4);
+        }
+
+        /// <summary>
+        /// Test case to get height of a tree with only a root node
+        /// </summary>
+        [TestMethod()]
+        public void BinaryTreeTest2()
+        {
+            // Construct a tree with only a root node
+            TreeNode root = new TreeNode(null, null, "A");
+            BinaryTree tree = new BinaryTree(root);
+
+            Assert.IsTrue(tree.Height == 1);
+        }
+
+        /// <summary>
+        /// Test case to get height of a tree with null root
+        /// </summary>
+        public void BinaryTreeTest3()
+        {
+            // Construct a tree with a null root
+            TreeNode root = null;
+            BinaryTree tree = new BinaryTree(root);
+
+            Assert.IsTrue(tree.Height == 0);
         }
     }
 }

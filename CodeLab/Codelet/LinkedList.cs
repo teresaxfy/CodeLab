@@ -1,4 +1,6 @@
-﻿namespace Codelet
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Codelet
 {
     /// <summary>
     /// List node
@@ -22,8 +24,8 @@
         /// <param name="next">Next node in a list</param>
         public ListNode(object data, ListNode next)
         {
-            Data = data;
-            Next = next;
+            this.Data = data;
+            this.Next = next;
         }
     }
 
@@ -40,16 +42,15 @@
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="node">Next node</param>
-        public LinkedList(ListNode node)
+        /// <param name="firstNode">First node after head</param>
+        public LinkedList(ListNode firstNode)
         {
-            Head = new ListNode(null, node);
+            this.Head = new ListNode(null, firstNode);
         }
 
         /// <summary>
-        /// Reverse a linked list
+        ///Reverse a linked list
         /// </summary>
-        /// <param name="linkedList">a linked list</param>
         public void ReverseList()
         {
             if (this.Head.Next == null)

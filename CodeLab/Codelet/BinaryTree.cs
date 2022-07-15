@@ -25,12 +25,12 @@
         /// </summary>
         /// <param name="left">Left node</param>
         /// <param name="right">Right node</param>
-        /// <param name="value">Node value</param>
+        /// <param name="data">Node data</param>
         public TreeNode(TreeNode left, TreeNode right, object data)
         {
-            Left = left;
-            Right = right;
-            Data = data;
+            this.Left = left;
+            this.Right = right;
+            this.Data = data;
         }
     }
 
@@ -51,7 +51,7 @@
         {
             get
             {
-                return BinaryTree.GetHeight(Root);
+                return BinaryTree.GetHeight(this.Root);
             }
         }
 
@@ -61,7 +61,7 @@
         /// <param name="root">Root node of a tree</param>
         public BinaryTree(TreeNode root)
         {
-            Root = root;
+            this.Root = root;
         }
 
         /// <summary>
@@ -75,7 +75,7 @@
                 return 0;
             else
             {
-                return Math.Max(GetHeight(root.Left), GetHeight(root.Right)) + 1;
+                return Math.Max(BinaryTree.GetHeight(root.Left), BinaryTree.GetHeight(root.Right)) + 1;
             }
         }
     }
